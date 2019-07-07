@@ -4,8 +4,9 @@ const ListItem = (props) => {
     const item = props.item
     return (
         <div>
-            Title: {item.headline}
-            Description: {item.metaDescription}
+            Title: {item.title}
+            Author: {item.author ? item.author : 'no author available'}
+            Date Published: {item.publishedAt}
         </div>
     )
 }
